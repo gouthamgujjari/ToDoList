@@ -1,0 +1,114 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+/* Background & Layout */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #8e9eab);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.todos-bg-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.todos-heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Input Field */
+.todo-user-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Buttons */
+.button {
+  width: 100%;
+  background: #2c3e50;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #34495e;
+}
+
+/* Todo List Items */
+.todo-items-container {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item-container {
+  display: flex;
+  align-items: center;
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.todo-item-container:hover {
+  background: #d5dbdb;
+}
+
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.delete-icon-container {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-icon {
+  font-size: 18px;
+  color: #c0392b;
+  transition: 0.3s;
+}
+
+.delete-icon:hover {
+  color: #a93226;
+}
